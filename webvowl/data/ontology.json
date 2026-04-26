@@ -1,0 +1,4897 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.example.org/emdv-o", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "European Medical Device Risk and Vigilance Ontology"
+    },
+    "iri" : "http://www.example.org/emdv-o",
+    "author" : [ "Jorge Granados" ],
+    "description" : {
+      "en" : "Ontology for representing European medical devices, manufacturers, risks, incidents and field safety corrective actions under MDR and IVDR frameworks."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Jorge Granados",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-26",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "European Medical Device Risk and Vigilance Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.example.org/emdv-o#MDRRiskClass",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRRiskClass",
+      "en" : "M D R Risk Class"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "comment" : {
+      "en" : "A risk class defined under the Medical Device Regulation."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#Risk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-011",
+        "en" : "Radiation overdose"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-001",
+        "en" : "Device failure - electrical"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-012",
+        "en" : "Metallic artifact - MRI"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-013",
+        "en" : "Electromagnetic interference"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-002",
+        "en" : "Device failure - mechanical"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-014",
+        "en" : "False positive result"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-020",
+        "en" : "Corrosion - metallic implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-010",
+        "en" : "Software malfunction"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-008",
+        "en" : "Biofilm formation"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-019",
+        "en" : "Wear debris - joint implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "en" : "Battery depletion - premature"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-015",
+        "en" : "False negative result"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-004",
+        "en" : "Hemolysis - pump-induced"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-016",
+        "en" : "Cross-reactivity"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "en" : "Device migration - implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-006",
+        "en" : "Lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-017",
+        "en" : "Contamination - reagent"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-018",
+        "en" : "Cybersecurity vulnerability"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-007",
+        "en" : "Infection - device-related"
+      }
+    } ],
+    "subClasses" : [ "16", "17", "18", "19", "20", "21", "22", "23", "24", "25" ],
+    "comment" : {
+      "en" : "A safety, performance or clinical risk associated with a medical device."
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#InjuryRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-004",
+        "en" : "Hemolysis - pump-induced"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the InjuryRisk risk type."
+    },
+    "id" : "18",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#UserNoticeAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNoticeAction",
+      "en" : "User Notice Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#FSCA-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-014",
+        "en" : "FSCA-014 - UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-009",
+        "en" : "FSCA-009 - UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-007",
+        "en" : "FSCA-007 - UserNotice"
+      }
+    } ],
+    "comment" : {
+      "en" : "A corrective action communicated as a user notice."
+    },
+    "id" : "30",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ProbabilityLevel",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProbabilityLevel",
+      "en" : "Probability Level"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Medium",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Probability level concept Medium."
+      },
+      "labels" : {
+        "IRI-based" : "Medium",
+        "en" : "Medium"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Low",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Probability level concept Low."
+      },
+      "labels" : {
+        "IRI-based" : "Low",
+        "en" : "Low"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#High",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Probability level concept High."
+      },
+      "labels" : {
+        "IRI-based" : "High",
+        "en" : "High"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the probability level of a risk."
+    },
+    "id" : "34",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#CompetentAuthority",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompetentAuthority",
+      "en" : "Competent Authority"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Swissmedic",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "Swissmedic",
+        "en" : "Swissmedic"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MPA",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "MPA",
+        "en" : "Läkemedelsverket (MPA)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#BfArM",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "BfArM",
+        "en" : "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MHRA",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "MHRA",
+        "en" : "Medicines and Healthcare products Regulatory Agency (MHRA)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#AFMPS",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "AFMPS",
+        "en" : "Agence fédérale des médicaments et des produits de santé (AFMPS)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#HPRA",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "HPRA",
+        "en" : "Health Products Regulatory Authority (HPRA)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RIVM",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "RIVM",
+        "en" : "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#ANSM",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Competent authority responsible for regulatory supervision."
+      },
+      "labels" : {
+        "IRI-based" : "ANSM",
+        "en" : "Agence nationale de sécurité du médicament (ANSM)"
+      }
+    } ],
+    "comment" : {
+      "en" : "A national competent authority responsible for regulatory supervision."
+    },
+    "id" : "35",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ContaminationRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "Contamination Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-017",
+        "en" : "Contamination - reagent"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the ContaminationRisk risk type."
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#FSCAStatus",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FSCAStatus",
+      "en" : "FSCA Status"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Closed",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action status Closed."
+      },
+      "labels" : {
+        "IRI-based" : "Closed",
+        "en" : "Closed"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Open",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action status Open."
+      },
+      "labels" : {
+        "IRI-based" : "Open",
+        "en" : "Open"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the status of a field safety corrective action."
+    },
+    "id" : "36",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ImplantableDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-025",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    } ],
+    "subClasses" : [ "38", "39" ],
+    "comment" : {
+      "en" : "A medical device intended to be totally or partially introduced into the human body and remain there after the procedure."
+    },
+    "id" : "37",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#RadiationRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "en" : "Radiation Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-011",
+        "en" : "Radiation overdose"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the RadiationRisk risk type."
+    },
+    "id" : "19",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#InfectionRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-008",
+        "en" : "Biofilm formation"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-007",
+        "en" : "Infection - device-related"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the InfectionRisk risk type."
+    },
+    "id" : "20",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MaterialRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "Material Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-019",
+        "en" : "Wear debris - joint implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-020",
+        "en" : "Corrosion - metallic implant"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the MaterialRisk risk type."
+    },
+    "id" : "24",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ActiveDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-022",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-024",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    } ],
+    "subClasses" : [ "38", "39" ],
+    "comment" : {
+      "en" : "A medical device whose operation depends on a source of energy other than that generated by the human body or gravity."
+    },
+    "id" : "44",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#IVDRRiskClass",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRRiskClass",
+      "en" : "I V D R Risk Class"
+    },
+    "subClasses" : [ "46", "47" ],
+    "comment" : {
+      "en" : "A risk class defined under the In Vitro Diagnostic Medical Device Regulation."
+    },
+    "id" : "45",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#Country",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Netherlands",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Netherlands."
+      },
+      "labels" : {
+        "IRI-based" : "Netherlands",
+        "en" : "Netherlands"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Belgium",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Belgium."
+      },
+      "labels" : {
+        "IRI-based" : "Belgium",
+        "en" : "Belgium"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Denmark",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Denmark."
+      },
+      "labels" : {
+        "IRI-based" : "Denmark",
+        "en" : "Denmark"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Sweden",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Sweden."
+      },
+      "labels" : {
+        "IRI-based" : "Sweden",
+        "en" : "Sweden"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Ireland",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Ireland."
+      },
+      "labels" : {
+        "IRI-based" : "Ireland",
+        "en" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Germany",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Germany."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Switzerland",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Switzerland."
+      },
+      "labels" : {
+        "IRI-based" : "Switzerland",
+        "en" : "Switzerland"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Poland",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Poland."
+      },
+      "labels" : {
+        "IRI-based" : "Poland",
+        "en" : "Poland"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Italy",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Italy."
+      },
+      "labels" : {
+        "IRI-based" : "Italy",
+        "en" : "Italy"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#UnitedKingdom",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for United Kingdom."
+      },
+      "labels" : {
+        "IRI-based" : "UnitedKingdom",
+        "en" : "United Kingdom"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Spain",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for Spain."
+      },
+      "labels" : {
+        "IRI-based" : "Spain",
+        "en" : "Spain"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#France",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Country concept for France."
+      },
+      "labels" : {
+        "IRI-based" : "France",
+        "en" : "France"
+      }
+    } ],
+    "comment" : {
+      "en" : "A country related to manufacturers, incident reports or external references."
+    },
+    "id" : "48",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#IVDRClassD",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassD",
+      "en" : "I V D R Class D"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ClassD",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory risk class concept ClassD."
+      },
+      "labels" : {
+        "IRI-based" : "ClassD",
+        "en" : "ClassD"
+      }
+    } ],
+    "comment" : {
+      "en" : "IVDR class D risk classification."
+    },
+    "id" : "46",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#IVDRClassC",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRClassC",
+      "en" : "I V D R Class C"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ClassC",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory risk class concept ClassC."
+      },
+      "labels" : {
+        "IRI-based" : "ClassC",
+        "en" : "ClassC"
+      }
+    } ],
+    "comment" : {
+      "en" : "IVDR class C risk classification."
+    },
+    "id" : "47",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MedDeviceCatalogueEntity",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedDeviceCatalogueEntity",
+      "en" : "Med Device Catalogue Entity"
+    },
+    "subClasses" : [ "54", "34", "51", "55", "32", "12", "48", "35", "56", "1", "6", "36", "9", "57", "14", "58" ],
+    "comment" : {
+      "en" : "Root class for all entities represented in the European medical device risk and vigilance catalogue."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SelfTestDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "Self Test Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-021",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    } ],
+    "comment" : {
+      "en" : "An in vitro diagnostic device intended to be used by lay persons."
+    },
+    "id" : "59",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#DeviceType",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceType",
+      "en" : "Device Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ImplantableDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for ImplantableDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableDeviceType",
+        "en" : "ImplantableDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#SelfTestDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for SelfTestDevice."
+      },
+      "labels" : {
+        "IRI-based" : "SelfTestDeviceType",
+        "en" : "SelfTestDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#SingleUseDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for SingleUseDevice."
+      },
+      "labels" : {
+        "IRI-based" : "SingleUseDeviceType",
+        "en" : "SingleUseDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#ActiveImplantType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for ActiveImplant."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveImplantType",
+        "en" : "ActiveImplant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#ActiveDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for ActiveDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveDeviceType",
+        "en" : "ActiveDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#InVitroDiagnosticDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for InVitroDiagnosticDevice."
+      },
+      "labels" : {
+        "IRI-based" : "InVitroDiagnosticDeviceType",
+        "en" : "InVitroDiagnosticDevice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#ImplantableActiveDeviceType",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Device type concept for ImplantableActiveDevice."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableActiveDeviceType",
+        "en" : "ImplantableActiveDevice"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the technical or regulatory type of a medical device."
+    },
+    "id" : "54",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#Incident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#INC-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-010",
+        "en" : "INC-010 - Device malfunction - incorrect FiO2 delivery"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-020",
+        "en" : "INC-020 - Patient harm - SAR heating injury"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "en" : "INC-003 - Surgical intervention required - valve re-anchoring"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-014",
+        "en" : "INC-014 - Patient harm - hyperglycaemic event"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "en" : "INC-002 - Device malfunction - premature battery depletion"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-013",
+        "en" : "INC-013 - Diagnostic error - false negative HIV"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-012",
+        "en" : "INC-012 - Diagnostic error - false negative SARS-CoV-2"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "INC-001 - Serious patient injury - embolic stroke"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-011",
+        "en" : "INC-011 - Diagnostic error - false positive TSH results"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-018",
+        "en" : "INC-018 - Cybersecurity incident - unauthorised access"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-007",
+        "en" : "INC-007 - Patient harm - adverse tissue reaction"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-006",
+        "en" : "INC-006 - Device malfunction - complete system failure"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-017",
+        "en" : "INC-017 - Surgical intervention - implant removal"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "en" : "INC-005 - Surgical intervention required - lead extraction"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-016",
+        "en" : "INC-016 - Patient harm - haemolytic anaemia"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "en" : "INC-004 - Device malfunction - stent fracture"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-015",
+        "en" : "INC-015 - Patient harm - drug overdose"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-009",
+        "en" : "INC-009 - Inappropriate shock delivery"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-008",
+        "en" : "INC-008 - Patient harm - cobalt toxicity"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "en" : "INC-019 - Near-miss - device not activated post-surgery"
+      }
+    } ],
+    "subClasses" : [ "74", "75", "76" ],
+    "comment" : {
+      "en" : "A reported event involving a medical device and an associated risk."
+    },
+    "id" : "32",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#FSCAType",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FSCAType",
+      "en" : "FSCA Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#UserNotice",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action type UserNotice."
+      },
+      "labels" : {
+        "IRI-based" : "UserNotice",
+        "en" : "UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#InSituCorrection",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action type InSituCorrection."
+      },
+      "labels" : {
+        "IRI-based" : "InSituCorrection",
+        "en" : "InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Recall",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action type Recall."
+      },
+      "labels" : {
+        "IRI-based" : "Recall",
+        "en" : "Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#SafetyAlert",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action type SafetyAlert."
+      },
+      "labels" : {
+        "IRI-based" : "SafetyAlert",
+        "en" : "SafetyAlert"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the type of field safety corrective action."
+    },
+    "id" : "56",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MedicalDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Medical_device",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MedicalDevice",
+      "en" : "Medical Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "en" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "en" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-021",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "en" : "OPTIGA Glucose Monitoring System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-022",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "en" : "BeneVision N1 Patient Monitor"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "en" : "STELLAREX Drug-Coated Balloon"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "en" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "en" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-023",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-024",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "en" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "en" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-025",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "en" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "en" : "TRITON Total Hip System"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "en" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "en" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "en" : "PROGENSA PCA3 Assay"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "en" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "en" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "en" : "Hemodialysis Machine 5008S"
+      }
+    } ],
+    "subClasses" : [ "77", "44", "37", "38", "60", "78" ],
+    "comment" : {
+      "en" : "A medical device registered in the European catalogue under MDR or IVDR regulatory frameworks."
+    },
+    "id" : "9",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#RegulatoryFramework",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegulatoryFramework",
+      "en" : "Regulatory Framework"
+    },
+    "subClasses" : [ "79", "80" ],
+    "comment" : {
+      "en" : "A controlled concept representing the applicable European regulatory framework."
+    },
+    "id" : "57",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ActiveImplant",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "en" : "Active Implant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "en" : "Iluvien Intravitreal Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "en" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "en" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-023",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "en" : "Tivoli II Cochlear Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
+      }
+    } ],
+    "comment" : {
+      "en" : "An implantable medical device whose operation depends on a source of energy."
+    },
+    "id" : "39",
+    "superClasses" : [ "37", "44" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#DiagnosticRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "en" : "Diagnostic Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-015",
+        "en" : "False negative result"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-016",
+        "en" : "Cross-reactivity"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-014",
+        "en" : "False positive result"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the DiagnosticRisk risk type."
+    },
+    "id" : "17",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "In Vitro Diagnostic Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "en" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "en" : "cobas e 801 Immunoassay Analyzer"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "en" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "en" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "en" : "PROGENSA PCA3 Assay"
+      }
+    } ],
+    "subClasses" : [ "59" ],
+    "comment" : {
+      "en" : "A medical device intended for in vitro examination of specimens derived from the human body."
+    },
+    "id" : "60",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#RiskCategory",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskCategory",
+      "en" : "Risk Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DeviceSafetyCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Device Safety."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceSafetyCategory",
+        "en" : "Device Safety"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DeviceFailureCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Device Failure."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceFailureCategory",
+        "en" : "Device Failure"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DiagnosticErrorCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Diagnostic Error."
+      },
+      "labels" : {
+        "IRI-based" : "DiagnosticErrorCategory",
+        "en" : "Diagnostic Error"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#PatientHarmCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Patient Harm."
+      },
+      "labels" : {
+        "IRI-based" : "PatientHarmCategory",
+        "en" : "Patient Harm"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DevicePerformanceCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Device Performance."
+      },
+      "labels" : {
+        "IRI-based" : "DevicePerformanceCategory",
+        "en" : "Device Performance"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#ProductQualityCategory",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk category concept for Product Quality."
+      },
+      "labels" : {
+        "IRI-based" : "ProductQualityCategory",
+        "en" : "Product Quality"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing a broad category of risk."
+    },
+    "id" : "58",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SafetyAlertAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlertAction",
+      "en" : "Safety Alert Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#FSCA-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "en" : "FSCA-004 - SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "FSCA-001 - SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-013",
+        "en" : "FSCA-013 - SafetyAlert"
+      }
+    } ],
+    "comment" : {
+      "en" : "A corrective action communicated as a safety alert."
+    },
+    "id" : "105",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MDRFramework",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRFramework",
+      "en" : "M D R Framework"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#MDR",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory framework concept MDR."
+      },
+      "labels" : {
+        "IRI-based" : "MDR",
+        "en" : "MDR"
+      }
+    } ],
+    "comment" : {
+      "en" : "Medical Device Regulation framework."
+    },
+    "id" : "79",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SeverityLevel",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeverityLevel",
+      "en" : "Severity Level"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Moderate",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Severity level concept Moderate."
+      },
+      "labels" : {
+        "IRI-based" : "Moderate",
+        "en" : "Moderate"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Serious",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Severity level concept Serious."
+      },
+      "labels" : {
+        "IRI-based" : "Serious",
+        "en" : "Serious"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Critical",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Severity level concept Critical."
+      },
+      "labels" : {
+        "IRI-based" : "Critical",
+        "en" : "Critical"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the severity level of a risk."
+    },
+    "id" : "55",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#CybersecurityRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "en" : "Cybersecurity Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-018",
+        "en" : "Cybersecurity vulnerability"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the CybersecurityRisk risk type."
+    },
+    "id" : "25",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#Manufacturer",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#MAN-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-010",
+        "en" : "Zimmer Biomet Holdings"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-011",
+        "en" : "LivaNova PLC"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-012",
+        "en" : "Drägerwerk AG & Co. KGaA"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "en" : "Abbott Medical Devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-013",
+        "en" : "Nipro Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-014",
+        "en" : "Hologic Inc."
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-003",
+        "en" : "Siemens Healthineers AG"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-015",
+        "en" : "bioMérieux SA"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-004",
+        "en" : "Philips Medical Systems"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-005",
+        "en" : "Roche Diagnostics GmbH"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-006",
+        "en" : "Boston Scientific Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-007",
+        "en" : "Stryker Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-008",
+        "en" : "Biotronik SE & Co. KG"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#MAN-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Manufacturer instance imported from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-009",
+        "en" : "GE HealthCare Technologies"
+      }
+    } ],
+    "comment" : {
+      "en" : "An organization responsible for manufacturing or placing a medical device on the European market."
+    },
+    "id" : "12",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SoftwareRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "en" : "Software Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-010",
+        "en" : "Software malfunction"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the SoftwareRisk risk type."
+    },
+    "id" : "22",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#CriticalRiskIncident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CriticalRiskIncident",
+      "en" : "Critical Risk Incident"
+    },
+    "comment" : {
+      "en" : "An inferred incident associated with a risk classified as critical."
+    },
+    "id" : "74",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#ImplantableActiveDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "Implantable Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#DEV-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "en" : "SYNERGY Stent System"
+      }
+    } ],
+    "comment" : {
+      "en" : "A medical device that is both implantable and active."
+    },
+    "id" : "38",
+    "superClasses" : [ "44", "37", "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MDRClassIIb",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIIb",
+      "en" : "M D R Class I Ib"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ClassIIb",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory risk class concept ClassIIb."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "en" : "ClassIIb"
+      }
+    } ],
+    "comment" : {
+      "en" : "MDR class IIb risk classification."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MDRClassIIa",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIIa",
+      "en" : "M D R Class I Ia"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ClassIIa",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory risk class concept ClassIIa."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIa",
+        "en" : "ClassIIa"
+      }
+    } ],
+    "comment" : {
+      "en" : "MDR class IIa risk classification."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#DeviceWithSeriousIncident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceWithSeriousIncident",
+      "en" : "Device With Serious Incident"
+    },
+    "comment" : {
+      "en" : "An inferred device involved in at least one serious incident."
+    },
+    "id" : "77",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SeriousIncident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#INC-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-010",
+        "en" : "INC-010 - Device malfunction - incorrect FiO2 delivery"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-020",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-020",
+        "en" : "INC-020 - Patient harm - SAR heating injury"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "en" : "INC-003 - Surgical intervention required - valve re-anchoring"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-014",
+        "en" : "INC-014 - Patient harm - hyperglycaemic event"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-013",
+        "en" : "INC-013 - Diagnostic error - false negative HIV"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "en" : "INC-002 - Device malfunction - premature battery depletion"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-012",
+        "en" : "INC-012 - Diagnostic error - false negative SARS-CoV-2"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "INC-001 - Serious patient injury - embolic stroke"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-011",
+        "en" : "INC-011 - Diagnostic error - false positive TSH results"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-007",
+        "en" : "INC-007 - Patient harm - adverse tissue reaction"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-018",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-018",
+        "en" : "INC-018 - Cybersecurity incident - unauthorised access"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-017",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-017",
+        "en" : "INC-017 - Surgical intervention - implant removal"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-006",
+        "en" : "INC-006 - Device malfunction - complete system failure"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-016",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-016",
+        "en" : "INC-016 - Patient harm - haemolytic anaemia"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "en" : "INC-005 - Surgical intervention required - lead extraction"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-015",
+        "en" : "INC-015 - Patient harm - drug overdose"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "en" : "INC-004 - Device malfunction - stent fracture"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-009",
+        "en" : "INC-009 - Inappropriate shock delivery"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#INC-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-008",
+        "en" : "INC-008 - Patient harm - cobalt toxicity"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident that caused or could have caused serious deterioration of health or death."
+    },
+    "id" : "76",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#PatientSex",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatientSex",
+      "en" : "Patient Sex"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#Female",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Patient sex concept Female."
+      },
+      "labels" : {
+        "IRI-based" : "Female",
+        "en" : "Female"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#NotApplicable",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Patient sex concept NotApplicable."
+      },
+      "labels" : {
+        "IRI-based" : "NotApplicable",
+        "en" : "NotApplicable"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#Male",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Patient sex concept Male."
+      },
+      "labels" : {
+        "IRI-based" : "Male",
+        "en" : "Male"
+      }
+    } ],
+    "comment" : {
+      "en" : "A controlled concept representing the sex of the affected patient."
+    },
+    "id" : "51",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MDRClassIII",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRClassIII",
+      "en" : "M D R Class I I I"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#ClassIII",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory risk class concept ClassIII."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "en" : "ClassIII"
+      }
+    } ],
+    "comment" : {
+      "en" : "MDR class III risk classification."
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#FieldSafetyCorrectiveAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldSafetyCorrectiveAction",
+      "en" : "Field Safety Corrective Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#FSCA-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "en" : "FSCA-012 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "FSCA-001 - SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-013",
+        "en" : "FSCA-013 - SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "en" : "FSCA-002 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-010",
+        "en" : "FSCA-010 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-011",
+        "en" : "FSCA-011 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-005",
+        "en" : "FSCA-005 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-006",
+        "en" : "FSCA-006 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-014",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-014",
+        "en" : "FSCA-014 - UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "en" : "FSCA-003 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-004",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "en" : "FSCA-004 - SafetyAlert"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-015",
+        "en" : "FSCA-015 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-009",
+        "en" : "FSCA-009 - UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-007",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-007",
+        "en" : "FSCA-007 - UserNotice"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-008",
+        "en" : "FSCA-008 - Recall"
+      }
+    } ],
+    "subClasses" : [ "145", "139", "105", "143", "30" ],
+    "comment" : {
+      "en" : "A field safety corrective action taken to reduce or eliminate risk associated with a medical device incident."
+    },
+    "id" : "6",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#MalfunctionRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-009",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "en" : "Battery depletion - premature"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "en" : "Device migration - implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-006",
+        "en" : "Lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-001",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-001",
+        "en" : "Device failure - electrical"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-002",
+        "en" : "Device failure - mechanical"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the MalfunctionRisk risk type."
+    },
+    "id" : "23",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#InterferenceRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "Interference Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#RSK-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-012",
+        "en" : "Metallic artifact - MRI"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#RSK-013",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Risk instance imported from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-013",
+        "en" : "Electromagnetic interference"
+      }
+    } ],
+    "comment" : {
+      "en" : "A risk subclass corresponding to the InterferenceRisk risk type."
+    },
+    "id" : "21",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#NearMissIncident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "Near Miss Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#INC-019",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Incident instance imported from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "en" : "INC-019 - Near-miss - device not activated post-surgery"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident that could have led to harm but did not result in serious consequences."
+    },
+    "id" : "75",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/emdv-o#OpenCorrectiveAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpenCorrectiveAction",
+      "en" : "Open Corrective Action"
+    },
+    "comment" : {
+      "en" : "An inferred field safety corrective action whose status is open."
+    },
+    "id" : "145",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#SingleUseDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "en" : "Single Use Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#DEV-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Medical device instance imported from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "en" : "STELLAREX Drug-Coated Balloon"
+      }
+    } ],
+    "comment" : {
+      "en" : "A medical device intended to be used once for a single patient."
+    },
+    "id" : "78",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#IVDRFramework",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRFramework",
+      "en" : "I V D R Framework"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#IVDR",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Regulatory framework concept IVDR."
+      },
+      "labels" : {
+        "IRI-based" : "IVDR",
+        "en" : "IVDR"
+      }
+    } ],
+    "comment" : {
+      "en" : "In Vitro Diagnostic Medical Device Regulation framework."
+    },
+    "id" : "80",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#RiskClass",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "Risk Class"
+    },
+    "subClasses" : [ "0", "45" ],
+    "comment" : {
+      "en" : "A controlled concept representing a regulatory risk class under MDR or IVDR."
+    },
+    "id" : "1",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#InSituCorrectionAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrectionAction",
+      "en" : "In Situ Correction Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#FSCA-005",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-005",
+        "en" : "FSCA-005 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-003",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "en" : "FSCA-003 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-015",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-015",
+        "en" : "FSCA-015 - InSituCorrection"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-011",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-011",
+        "en" : "FSCA-011 - InSituCorrection"
+      }
+    } ],
+    "comment" : {
+      "en" : "A corrective action performed on devices already placed in the field."
+    },
+    "id" : "139",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.example.org/emdv-o#RecallAction",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecallAction",
+      "en" : "Recall Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/emdv-o#FSCA-006",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-006",
+        "en" : "FSCA-006 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-008",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-008",
+        "en" : "FSCA-008 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-012",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "en" : "FSCA-012 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-002",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "en" : "FSCA-002 - Recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/emdv-o#FSCA-010",
+      "baseIri" : "http://www.example.org/emdv-o",
+      "comment" : {
+        "en" : "Field safety corrective action instance imported from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-010",
+        "en" : "FSCA-010 - Recall"
+      }
+    } ],
+    "comment" : {
+      "en" : "A corrective action involving a product recall."
+    },
+    "id" : "143",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.example.org/emdv-o#actionDate",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "en" : "action date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Date on which the corrective action was initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#isImplantable",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "is implantable"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates whether the device is implantable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#eudamedSrn",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "eudamedSrn",
+      "en" : "eudamed srn"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "EUDAMED single registration number of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#contactEmail",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "contactEmail",
+      "en" : "contact email"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Regulatory contact email of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#imdrfCode",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "imdrfCode",
+      "en" : "imdrf code"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "IMDRF code associated with the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#detectionDate",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "detectionDate",
+      "en" : "detection date"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Date on which the incident was detected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#countriesAffected",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "countriesAffected",
+      "en" : "countries affected"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Countries affected by the corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#deviceIdentifier",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "deviceIdentifier",
+      "en" : "device identifier"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Identifier of the medical device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasProbability",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasProbability",
+      "en" : "has probability"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a risk to its probability level."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasPatientSex",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasPatientSex",
+      "en" : "has patient sex"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an incident to the sex of the affected patient."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#riskDescription",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "riskDescription",
+      "en" : "risk description"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Textual description of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasActionType",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasActionType",
+      "en" : "has action type"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates a field safety corrective action to its type."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#involvesDevice",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an incident to the medical device involved in it."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#reportedBy",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an incident to the reporting manufacturer or organization."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#isReusable",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "is reusable"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates whether the device is reusable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#authorizationNumber",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "authorizationNumber",
+      "en" : "authorization number"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Authorization number of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#fscaScope",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "fscaScope",
+      "en" : "fsca scope"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Scope of the field safety corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#reportDate",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "report date"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Date on which the incident was reported."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#isActive",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "is active"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates whether the device is active."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#eudamedFscaReference",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "eudamedFscaReference",
+      "en" : "eudamed fsca reference"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "EUDAMED reference for the field safety corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#manufacturerIdentifier",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "manufacturerIdentifier",
+      "en" : "manufacturer identifier"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Identifier of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#incidentOutcome",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "incidentOutcome",
+      "en" : "incident outcome"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Outcome of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#associatedWithRisk",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "associatedWithRisk",
+      "en" : "associated with risk"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an incident to the risk identified in the report."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#riskIdentifier",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "riskIdentifier",
+      "en" : "risk identifier"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Identifier of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#eventDate",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "en" : "event date"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Date on which the incident occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#manufacturedBy",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "manufacturedBy",
+      "en" : "manufactured by"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a medical device to the manufacturer responsible for it."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#correctiveActionTaken",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "correctiveActionTaken",
+      "en" : "corrective action taken"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Indicates whether a corrective action was taken."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#closureDate",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "closureDate",
+      "en" : "closure date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Date on which the corrective action was closed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#intendedPurpose",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "intendedPurpose",
+      "en" : "intended purpose"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Intended medical purpose of the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "range" : "44",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "45",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "44",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasRiskClass",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "has risk class"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a medical device to its regulatory risk class."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "60",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "14",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#deviceName",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "device name"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Commercial or technical name of the medical device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "range" : "37",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "37",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "14",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#locatedInCountry",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "locatedInCountry",
+      "en" : "located in country"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Relates a manufacturer to the country where it is located."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "14",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "14",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "14",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#incidentDescription",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "incidentDescription",
+      "en" : "incident description"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Textual description of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#manufacturerName",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "manufacturerName",
+      "en" : "manufacturer name"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Official name of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#udiDi",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "udiDi",
+      "en" : "udi di"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Unique device identifier-device identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "range" : "14",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#correctsIncident",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "correctsIncident",
+      "en" : "corrects incident"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates a field safety corrective action to the incident it addresses."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "6",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "6",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#authorizedBy",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "authorizedBy",
+      "en" : "authorized by"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Relates a manufacturer to its competent authority."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "6",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "6",
+    "domain" : "143",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "6",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#eudamedIncidentReference",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "eudamedIncidentReference",
+      "en" : "eudamed incident reference"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "EUDAMED reference for the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#devicesAffected",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devices affected"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Number or description of affected devices."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "range" : "15",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "15",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "15",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "15",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasDeviceType",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasDeviceType",
+      "en" : "has device type"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a medical device to its device type."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "15",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "15",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "15",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "15",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#isIVD",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "isIVD",
+      "en" : "is i v d"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates whether the device is an in vitro diagnostic device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasSeverity",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasSeverity",
+      "en" : "has severity"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a risk to its severity level."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "15",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "15",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "15",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "15",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "15",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "15",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#reportedInCountry",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "reportedInCountry",
+      "en" : "reported in country"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Relates an incident to the country where it was reported."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#fscaDescription",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "fscaDescription",
+      "en" : "fsca description"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Textual description of the field safety corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#regulatedUnder",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "regulatedUnder",
+      "en" : "regulated under"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a medical device to the applicable regulatory framework."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasRiskCategory",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasRiskCategory",
+      "en" : "has risk category"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a risk to its general category."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "1",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "9",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "9",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "57",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "57",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "9",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#patientAge",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "en" : "patient age"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Age of the affected patient."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#fscaIdentifier",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "fscaIdentifier",
+      "en" : "fsca identifier"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Identifier of the field safety corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#riskName",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "riskName",
+      "en" : "risk name"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Name of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#affectsDeviceType",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "affectsDeviceType",
+      "en" : "affects device type"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a risk to the type of medical device affected."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#incidentIdentifier",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "incidentIdentifier",
+      "en" : "incident identifier"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Identifier of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.example.org/emdv-o#hasFSCAStatus",
+    "baseIri" : "http://www.example.org/emdv-o",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasFSCAStatus",
+      "en" : "has f s c a status"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates a field safety corrective action to its current status."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "9",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "32",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "32",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "9",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "32",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  } ]
+}
