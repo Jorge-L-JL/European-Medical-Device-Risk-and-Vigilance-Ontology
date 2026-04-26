@@ -866,6 +866,27 @@
 
 
     <owl:Class rdf:about="http://www.example.org/emdv-o#CriticalRiskIncident">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/emdv-o#Incident"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/emdv-o#associatedWithRisk"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.example.org/emdv-o#Risk"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.example.org/emdv-o#hasSeverity"/>
+                                        <owl:hasValue rdf:resource="http://www.example.org/emdv-o#Critical"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.example.org/emdv-o#Incident"/>
         <rdfs:comment xml:lang="en">An inferred incident associated with a risk classified as critical.</rdfs:comment>
         <rdfs:label xml:lang="en">Critical Risk Incident</rdfs:label>
@@ -899,6 +920,21 @@
 
 
     <owl:Class rdf:about="http://www.example.org/emdv-o#DeviceWithSeriousIncident">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/emdv-o#MedicalDevice"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.example.org/emdv-o#involvesDevice"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="http://www.example.org/emdv-o#SeriousIncident"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.example.org/emdv-o#MedicalDevice"/>
         <rdfs:comment xml:lang="en">An inferred device involved in at least one serious incident.</rdfs:comment>
         <rdfs:label xml:lang="en">Device With Serious Incident</rdfs:label>
@@ -1264,6 +1300,17 @@
 
 
     <owl:Class rdf:about="http://www.example.org/emdv-o#OpenCorrectiveAction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/emdv-o#hasFSCAStatus"/>
+                        <owl:hasValue rdf:resource="http://www.example.org/emdv-o#Open"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"/>
         <rdfs:comment xml:lang="en">An inferred field safety corrective action whose status is open.</rdfs:comment>
         <rdfs:label xml:lang="en">Open Corrective Action</rdfs:label>
@@ -4379,53 +4426,53 @@
         <rdfs:comment xml:lang="en">Field safety corrective action type UserNotice.</rdfs:comment>
         <rdfs:label xml:lang="en">UserNotice</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid11">
-        <swrl:argument1 rdf:resource="urn:swrl#i"/>
-        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#SeriousIncident"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
-        <swrl:argument1 rdf:resource="urn:swrl#i"/>
-        <swrl:argument2 rdf:resource="urn:swrl#d"/>
-        <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#involvesDevice"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid13">
-        <swrl:argument1 rdf:resource="urn:swrl#d"/>
-        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#DeviceWithSeriousIncident"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid14">
-        <swrl:argument1 rdf:resource="urn:swrl#f"/>
-        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
+    <rdf:Description rdf:nodeID="genid28">
         <swrl:argument1 rdf:resource="urn:swrl#f"/>
         <swrl:argument2 rdf:resource="http://www.example.org/emdv-o#Open"/>
         <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#hasFSCAStatus"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid16">
+    <rdf:Description rdf:nodeID="genid29">
         <swrl:argument1 rdf:resource="urn:swrl#f"/>
         <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#OpenCorrectiveAction"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid17">
-        <swrl:argument1 rdf:resource="urn:swrl#i"/>
-        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#Incident"/>
+    <rdf:Description rdf:nodeID="genid30">
+        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#DeviceWithSeriousIncident"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid18">
+    <rdf:Description rdf:nodeID="genid31">
         <swrl:argument1 rdf:resource="urn:swrl#i"/>
-        <swrl:argument2 rdf:resource="urn:swrl#r"/>
-        <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#associatedWithRisk"/>
+        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#involvesDevice"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid19">
+    <rdf:Description rdf:nodeID="genid32">
+        <swrl:argument1 rdf:resource="urn:swrl#f"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid33">
+        <swrl:argument1 rdf:resource="urn:swrl#i"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#SeriousIncident"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#MedicalDevice"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
         <swrl:argument1 rdf:resource="urn:swrl#r"/>
         <swrl:argument2 rdf:resource="http://www.example.org/emdv-o#Critical"/>
         <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#hasSeverity"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid20">
+    <rdf:Description rdf:nodeID="genid36">
+        <swrl:argument1 rdf:resource="urn:swrl#i"/>
+        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/emdv-o#associatedWithRisk"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid37">
         <swrl:argument1 rdf:resource="urn:swrl#i"/>
         <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#CriticalRiskIncident"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
-        <swrl:argument1 rdf:resource="urn:swrl#d"/>
-        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#MedicalDevice"/>
+    <rdf:Description rdf:nodeID="genid38">
+        <swrl:argument1 rdf:resource="urn:swrl#i"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/emdv-o#Incident"/>
     </rdf:Description>
     
 

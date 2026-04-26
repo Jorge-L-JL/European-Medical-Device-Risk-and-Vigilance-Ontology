@@ -553,6 +553,21 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.example.org/emdv-o#CriticalRiskIncident
 :CriticalRiskIncident rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :Incident
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :associatedWithRisk ;
+                                                                   owl:someValuesFrom [ owl:intersectionOf ( :Risk
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :hasSeverity ;
+                                                                                                               owl:hasValue :Critical
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ]
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
                       rdfs:subClassOf :Incident ;
                       rdfs:comment "An inferred incident associated with a risk classified as critical."@en ;
                       rdfs:label "Critical Risk Incident"@en .
@@ -574,6 +589,15 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.example.org/emdv-o#DeviceWithSeriousIncident
 :DeviceWithSeriousIncident rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :MedicalDevice
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty [ owl:inverseOf :involvesDevice
+                                                                                       ] ;
+                                                                        owl:someValuesFrom :SeriousIncident
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
                            rdfs:subClassOf :MedicalDevice ;
                            rdfs:comment "An inferred device involved in at least one serious incident."@en ;
                            rdfs:label "Device With Serious Incident"@en .
@@ -811,6 +835,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.example.org/emdv-o#OpenCorrectiveAction
 :OpenCorrectiveAction rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :FieldSafetyCorrectiveAction
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasFSCAStatus ;
+                                                                   owl:hasValue :Open
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
                       rdfs:subClassOf :FieldSafetyCorrectiveAction ;
                       rdfs:comment "An inferred field safety corrective action whose status is open."@en ;
                       rdfs:label "Open Corrective Action"@en .
@@ -3147,42 +3179,42 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "UserNotice"@en .
 
 
-_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
-          <http://www.w3.org/2003/11/swrl#classPredicate> :SeriousIncident .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
+          <http://www.w3.org/2003/11/swrl#argument2> :Open ;
+          <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFSCAStatus .
 
-_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
+           <http://www.w3.org/2003/11/swrl#classPredicate> :OpenCorrectiveAction .
+
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> ;
+           <http://www.w3.org/2003/11/swrl#classPredicate> :DeviceWithSeriousIncident .
+
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#d> ;
            <http://www.w3.org/2003/11/swrl#propertyPredicate> :involvesDevice .
 
-_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> ;
-           <http://www.w3.org/2003/11/swrl#classPredicate> :DeviceWithSeriousIncident .
-
-_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
            <http://www.w3.org/2003/11/swrl#classPredicate> :FieldSafetyCorrectiveAction .
 
-_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
-           <http://www.w3.org/2003/11/swrl#argument2> :Open ;
-           <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFSCAStatus .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
+           <http://www.w3.org/2003/11/swrl#classPredicate> :SeriousIncident .
 
-_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> ;
-           <http://www.w3.org/2003/11/swrl#classPredicate> :OpenCorrectiveAction .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> ;
+           <http://www.w3.org/2003/11/swrl#classPredicate> :MedicalDevice .
 
-_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
-           <http://www.w3.org/2003/11/swrl#classPredicate> :Incident .
-
-_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
-           <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#r> ;
-           <http://www.w3.org/2003/11/swrl#propertyPredicate> :associatedWithRisk .
-
-_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#r> ;
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#r> ;
            <http://www.w3.org/2003/11/swrl#argument2> :Critical ;
            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSeverity .
 
-_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
+           <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#r> ;
+           <http://www.w3.org/2003/11/swrl#propertyPredicate> :associatedWithRisk .
+
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
            <http://www.w3.org/2003/11/swrl#classPredicate> :CriticalRiskIncident .
 
-_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> ;
-           <http://www.w3.org/2003/11/swrl#classPredicate> :MedicalDevice .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> ;
+           <http://www.w3.org/2003/11/swrl#classPredicate> :Incident .
 
 #################################################################
 #    Annotations

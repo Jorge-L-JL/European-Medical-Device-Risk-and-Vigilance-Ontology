@@ -1,5 +1,29 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/emdv-o#Incident"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.example.org/emdv-o#SeriousIncident"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.example.org/emdv-o#involvesDevice"
+  } ]
+}, {
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#Incident"
@@ -12,104 +36,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/emdv-o#SeverityLevel"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/emdv-o#hasSeverity"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#SeriousIncident"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#involvesDevice"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#DeviceWithSeriousIncident"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#f"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"
-  } ]
-}, {
   "@id" : "_:genid15",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#f"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/emdv-o#Open"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#hasFSCAStatus"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#f"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#OpenCorrectiveAction"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#Incident"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#associatedWithRisk"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/emdv-o#Critical"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#hasSeverity"
-  } ]
-}, {
-  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://www.example.org/emdv-o#IVDR"
@@ -118,49 +45,7 @@
     "@id" : "http://www.example.org/emdv-o#regulatedUnder"
   } ]
 }, {
-  "@id" : "_:genid20",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#CriticalRiskIncident"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/emdv-o#MedicalDevice"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Critical risk incident rule"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ ]
-  } ]
-}, {
-  "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Device with serious incident rule"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ ]
-  } ]
-}, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#Risk"
@@ -173,20 +58,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Open corrective action rule"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ ]
-  } ]
-}, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#MedicalDevice"
@@ -199,7 +71,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#Manufacturer"
@@ -212,7 +84,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#RiskClass"
@@ -225,7 +97,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#Manufacturer"
@@ -238,7 +110,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#RegulatoryFramework"
@@ -251,7 +123,26 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.example.org/emdv-o#Open"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/emdv-o#hasFSCAStatus"
+  } ]
+}, {
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.example.org/emdv-o#ProbabilityLevel"
@@ -262,6 +153,196 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.example.org/emdv-o#SeverityLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/emdv-o#hasSeverity"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/emdv-o#Open"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#hasFSCAStatus"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#OpenCorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/emdv-o#associatedWithRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#DeviceWithSeriousIncident"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#involvesDevice"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#SeriousIncident"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#MedicalDevice"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/emdv-o#Critical"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#hasSeverity"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#associatedWithRisk"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#CriticalRiskIncident"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.example.org/emdv-o#Incident"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/emdv-o#Risk"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Critical risk incident rule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device with serious incident rule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Open corrective action rule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.example.org/emdv-o#Critical"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/emdv-o#hasSeverity"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/emdv-o#MedicalDevice"
+    }, {
+      "@id" : "_:genid11"
+    } ]
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Belgium",
@@ -639,14 +720,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#CriticalRiskIncidentRule",
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#CybersecurityRisk",
@@ -2145,14 +2229,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedicalDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#DeviceWithSeriousIncidentRule",
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid41"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid42"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#DiagnosticErrorCategory",
@@ -2979,7 +3066,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedDeviceCatalogueEntity"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#France",
@@ -4445,7 +4532,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedicalDevice"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#InVitroDiagnosticDeviceType",
@@ -4475,11 +4562,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedDeviceCatalogueEntity"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid16"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid5"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#InfectionRisk",
@@ -5286,11 +5373,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedDeviceCatalogueEntity"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid19"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid20"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#Medium",
@@ -5389,14 +5476,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#OpenCorrectiveActionRule",
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid43"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@id" : "_:genid27"
+    "@id" : "_:genid44"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#PatientHarmCategory",
@@ -6352,9 +6442,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.example.org/emdv-o#MedDeviceCatalogueEntity"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid26"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "http://www.example.org/emdv-o#RiskCategory",

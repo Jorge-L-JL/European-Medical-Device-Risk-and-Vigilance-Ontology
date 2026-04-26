@@ -64,7 +64,7 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>European Medical Device Risk and Vigilance Ontology</h1>
 <h2>Release: 2026-04-26</h2>
 
@@ -96,6 +96,27 @@ This is a placeholder text for the abstract. The abstract should contain a coupl
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.example.org/emdv-o#&gt;</td></tr>
+<tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>resource</b></td><td>&lt;http://dbpedia.org/resource/&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl#&gt;</td></tr>
+<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
   
 
@@ -1026,13 +1047,13 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#d4e7005">Critical risk incident rule</a>
+      <a href="#d4e7081">Critical risk incident rule</a>
    </li>
    <li>
-      <a href="#d4e7017">Device with serious incident rule</a>
+      <a href="#d4e7093">Device with serious incident rule</a>
    </li>
    <li>
-      <a href="#d4e7029">Open corrective action rule</a>
+      <a href="#d4e7105">Open corrective action rule</a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
@@ -1234,6 +1255,12 @@ This section provides details for each class and property defined by European Me
   </div>
   <dl class="description">
    <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/emdv-o#Incident">Incident</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#associatedWithRisk" title="http://www.example.org/emdv-o#associatedWithRisk">associated with risk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Risk" title="http://www.example.org/emdv-o#Risk">Risk</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasSeverity" title="http://www.example.org/emdv-o#hasSeverity">has severity</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#Critical" title="http://www.example.org/emdv-o#Critical">Critical</a> <sup class="type-ni" title="named individual">ni</sup>))
+   </dd>
+   <dt>
     has super-classes
    </dt>
    <dd>
@@ -1296,6 +1323,12 @@ This section provides details for each class and property defined by European Me
    <span class="markdown">An inferred device involved in at least one serious incident.</span>
   </div>
   <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#MedicalDevice" title="http://www.example.org/emdv-o#MedicalDevice">Medical Device</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<span class="logic">inverse</span> <a href="#involvesDevice" title="http://www.example.org/emdv-o#involvesDevice">involves device</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SeriousIncident" title="http://www.example.org/emdv-o#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
    <dt>
     has super-classes
    </dt>
@@ -1956,6 +1989,12 @@ This section provides details for each class and property defined by European Me
    <span class="markdown">An inferred field safety corrective action whose status is open.</span>
   </div>
   <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#FieldSafetyCorrectiveAction" title="http://www.example.org/emdv-o#FieldSafetyCorrectiveAction">Field Safety Corrective Action</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasFSCAStatus" title="http://www.example.org/emdv-o#hasFSCAStatus">has f s c a status</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#Open" title="http://www.example.org/emdv-o#Open">Open</a> <sup class="type-ni" title="named individual">ni</sup>)
+   </dd>
    <dt>
     has super-classes
    </dt>
@@ -9892,19 +9931,19 @@ This section provides details for each class and property defined by European Me
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
  <h3 id="swrlrules" class="list">SWRL rules</h3>
  <ul class="hlist">
-  <li><a href="#d4e7005">Critical risk incident rule</a></li>
-  <li><a href="#d4e7017">Device with serious incident rule</a></li>
-  <li><a href="#d4e7029">Open corrective action rule</a></li>
+  <li><a href="#d4e7081">Critical risk incident rule</a></li>
+  <li><a href="#d4e7093">Device with serious incident rule</a></li>
+  <li><a href="#d4e7105">Open corrective action rule</a></li>
  </ul>
- <div class="entity" id="d4e7005">
+ <div class="entity" id="d4e7081">
   <h3>Critical risk incident rule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>-&gt;</p>
  </div>
- <div class="entity" id="d4e7017">
+ <div class="entity" id="d4e7093">
   <h3>Device with serious incident rule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>-&gt;</p>
  </div>
- <div class="entity" id="d4e7029">
+ <div class="entity" id="d4e7105">
   <h3>Open corrective action rule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>-&gt;</p>
  </div>

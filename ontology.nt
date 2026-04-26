@@ -500,6 +500,29 @@
 # 
 # http://www.example.org/emdv-o#CriticalRiskIncident
 <http://www.example.org/emdv-o#CriticalRiskIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdv-o#CriticalRiskIncident> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://www.example.org/emdv-o#Critical> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasSeverity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.example.org/emdv-o#Risk> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#associatedWithRisk> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.example.org/emdv-o#Incident> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.example.org/emdv-o#CriticalRiskIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#Incident> .
 <http://www.example.org/emdv-o#CriticalRiskIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An inferred incident associated with a risk classified as critical."@en .
 <http://www.example.org/emdv-o#CriticalRiskIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Critical Risk Incident"@en .
@@ -518,6 +541,19 @@
 # 
 # http://www.example.org/emdv-o#DeviceWithSeriousIncident
 <http://www.example.org/emdv-o#DeviceWithSeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdv-o#DeviceWithSeriousIncident> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.example.org/emdv-o#SeriousIncident> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.example.org/emdv-o#involvesDevice> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.example.org/emdv-o#MedicalDevice> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.example.org/emdv-o#DeviceWithSeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedicalDevice> .
 <http://www.example.org/emdv-o#DeviceWithSeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An inferred device involved in at least one serious incident."@en .
 <http://www.example.org/emdv-o#DeviceWithSeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Device With Serious Incident"@en .
@@ -543,11 +579,11 @@
 # http://www.example.org/emdv-o#FieldSafetyCorrectiveAction
 <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedDeviceCatalogueEntity> .
-<http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Incident> .
-_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#correctsIncident> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Incident> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#correctsIncident> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A field safety corrective action taken to reduce or eliminate risk associated with a medical device incident."@en .
 <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Field Safety Corrective Action"@en .
 # 
@@ -598,31 +634,31 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.example.org/emdv-o#InVitroDiagnosticDevice
 <http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedicalDevice> .
-<http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#hasValue> <http://www.example.org/emdv-o#IVDR> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#regulatedUnder> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://www.example.org/emdv-o#IVDR> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#regulatedUnder> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device intended for in vitro examination of specimens derived from the human body."@en .
 <http://www.example.org/emdv-o#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
 # 
 # http://www.example.org/emdv-o#Incident
 <http://www.example.org/emdv-o#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedDeviceCatalogueEntity> .
-<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Risk> .
-_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#associatedWithRisk> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#MedicalDevice> .
-_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#involvesDevice> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Manufacturer> .
-_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#reportedBy> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Risk> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#associatedWithRisk> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#MedicalDevice> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#involvesDevice> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Manufacturer> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#reportedBy> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A reported event involving a medical device and an associated risk."@en .
 <http://www.example.org/emdv-o#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
 # 
@@ -700,21 +736,21 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.example.org/emdv-o#MedicalDevice
 <http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedDeviceCatalogueEntity> .
-<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#RiskClass> .
-_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasRiskClass> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Manufacturer> .
-_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#manufacturedBy> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#RegulatoryFramework> .
-_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#regulatedUnder> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#RiskClass> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasRiskClass> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#Manufacturer> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#manufacturedBy> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#RegulatoryFramework> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#regulatedUnder> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device registered in the European catalogue under MDR or IVDR regulatory frameworks."@en .
 <http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device"@en .
 <http://www.example.org/emdv-o#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Medical_device> .
@@ -727,6 +763,18 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.example.org/emdv-o#OpenCorrectiveAction
 <http://www.example.org/emdv-o#OpenCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdv-o#OpenCorrectiveAction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#hasValue> <http://www.example.org/emdv-o#Open> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasFSCAStatus> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://www.example.org/emdv-o#OpenCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> .
 <http://www.example.org/emdv-o#OpenCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An inferred field safety corrective action whose status is open."@en .
 <http://www.example.org/emdv-o#OpenCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Open Corrective Action"@en .
@@ -764,16 +812,16 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.example.org/emdv-o#Risk
 <http://www.example.org/emdv-o#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdv-o#MedDeviceCatalogueEntity> .
-<http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#ProbabilityLevel> .
-_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasProbability> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#SeverityLevel> .
-_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasSeverity> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#ProbabilityLevel> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasProbability> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <http://www.example.org/emdv-o#SeverityLevel> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdv-o#hasSeverity> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A safety, performance or clinical risk associated with a medical device."@en .
 <http://www.example.org/emdv-o#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
 # 
@@ -2890,32 +2938,32 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.example.org/emdv-o#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "Field safety corrective action type UserNotice."@en .
 <http://www.example.org/emdv-o#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "UserNotice"@en .
 # 
-_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
-_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#SeriousIncident> .
-_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
-_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#d> .
-_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#involvesDevice> .
-_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> .
-_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#DeviceWithSeriousIncident> .
-_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
-_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> .
-_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
-_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/emdv-o#Open> .
-_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#hasFSCAStatus> .
-_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
-_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#OpenCorrectiveAction> .
-_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
-_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#Incident> .
-_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
-_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#r> .
-_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#associatedWithRisk> .
-_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#r> .
-_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/emdv-o#Critical> .
-_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#hasSeverity> .
-_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
-_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#CriticalRiskIncident> .
-_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> .
-_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#MedicalDevice> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/emdv-o#Open> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#hasFSCAStatus> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#OpenCorrectiveAction> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#DeviceWithSeriousIncident> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#d> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#involvesDevice> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#f> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#FieldSafetyCorrectiveAction> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#SeriousIncident> .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#d> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#MedicalDevice> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#r> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/emdv-o#Critical> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#hasSeverity> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#r> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdv-o#associatedWithRisk> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#CriticalRiskIncident> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#i> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdv-o#Incident> .
 # 
 # 
 # #################################################################
@@ -2925,14 +2973,14 @@ _:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.or
 # #################################################################
 # 
 # 
-<http://www.example.org/emdv-o#CriticalRiskIncidentRule> <http://www.w3.org/2003/11/swrl#body> _:genid22 .
-<http://www.example.org/emdv-o#CriticalRiskIncidentRule> <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+<http://www.example.org/emdv-o#CriticalRiskIncidentRule> <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+<http://www.example.org/emdv-o#CriticalRiskIncidentRule> <http://www.w3.org/2003/11/swrl#head> _:genid40 .
 # 
-<http://www.example.org/emdv-o#DeviceWithSeriousIncidentRule> <http://www.w3.org/2003/11/swrl#body> _:genid24 .
-<http://www.example.org/emdv-o#DeviceWithSeriousIncidentRule> <http://www.w3.org/2003/11/swrl#head> _:genid25 .
+<http://www.example.org/emdv-o#DeviceWithSeriousIncidentRule> <http://www.w3.org/2003/11/swrl#body> _:genid41 .
+<http://www.example.org/emdv-o#DeviceWithSeriousIncidentRule> <http://www.w3.org/2003/11/swrl#head> _:genid42 .
 # 
-<http://www.example.org/emdv-o#OpenCorrectiveActionRule> <http://www.w3.org/2003/11/swrl#body> _:genid26 .
-<http://www.example.org/emdv-o#OpenCorrectiveActionRule> <http://www.w3.org/2003/11/swrl#head> _:genid27 .
+<http://www.example.org/emdv-o#OpenCorrectiveActionRule> <http://www.w3.org/2003/11/swrl#body> _:genid43 .
+<http://www.example.org/emdv-o#OpenCorrectiveActionRule> <http://www.w3.org/2003/11/swrl#head> _:genid44 .
 # 
 # 
 # 
@@ -2943,16 +2991,16 @@ _:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.or
 # #################################################################
 # 
 # 
-_:genid28 <http://www.w3.org/2000/01/rdf-schema#label> "Critical risk incident rule"@en .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid28 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid28 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/2000/01/rdf-schema#label> "Device with serious incident rule"@en .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid29 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/2000/01/rdf-schema#label> "Open corrective action rule"@en .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid30 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/2000/01/rdf-schema#label> "Critical risk incident rule"@en .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid45 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/2000/01/rdf-schema#label> "Device with serious incident rule"@en .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid46 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/2000/01/rdf-schema#label> "Open corrective action rule"@en .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid47 <http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
